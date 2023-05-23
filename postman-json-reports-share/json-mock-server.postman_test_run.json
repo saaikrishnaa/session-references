@@ -1,0 +1,213 @@
+{
+	"id": "488c391a-180d-4ced-a441-97ca9c5e7fa1",
+	"name": "json-mock-server",
+	"timestamp": "2023-04-30T13:32:45.365Z",
+	"collection_id": "16542258-e4906efe-8639-417e-9cdf-e8556aba5f36",
+	"folder_id": 0,
+	"environment_id": "16542258-91c21371-0050-46f7-9457-ffdf7b2efa80",
+	"totalPass": 11,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-04-30T13:32:43.898Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "ca4a5196-0ac6-429e-ba9b-b5f836e521f6",
+			"name": "Get the list of Employees",
+			"url": "http://localhost:3000/employees",
+			"time": 36,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				36
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "c6cb1574-2f51-4492-a2d7-ff23d99c7627",
+			"name": "Add an Employee",
+			"url": "http://localhost:3000/employees",
+			"time": 34,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Successful POST request": true,
+				"Response time is less than 200ms": true,
+				"If the id in the response exists!?": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"If the id in the response exists!?": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				34
+			],
+			"allTests": [
+				{
+					"Successful POST request": true,
+					"Response time is less than 200ms": true,
+					"If the id in the response exists!?": true
+				}
+			]
+		},
+		{
+			"id": "a3d5e197-fa6a-463b-ad96-22534f73b8c3",
+			"name": "Get an Employee",
+			"url": "http://localhost:3000/employees/208",
+			"time": 32,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				32
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "96d66d26-2136-4282-b139-d1abd82e26a7",
+			"name": "Update Employee",
+			"url": "http://localhost:3000/employees/208",
+			"time": 30,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				30
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Content-Type is present": true
+				}
+			]
+		},
+		{
+			"id": "94bbdec6-9727-4b2f-af86-3e5cee6012e0",
+			"name": "Delete an Employee",
+			"url": "http://localhost:3000/employees/208",
+			"time": 33,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				33
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 165,
+	"collection": {
+		"requests": [
+			{
+				"id": "ca4a5196-0ac6-429e-ba9b-b5f836e521f6",
+				"method": "GET"
+			},
+			{
+				"id": "c6cb1574-2f51-4492-a2d7-ff23d99c7627",
+				"method": "POST"
+			},
+			{
+				"id": "a3d5e197-fa6a-463b-ad96-22534f73b8c3",
+				"method": "GET"
+			},
+			{
+				"id": "96d66d26-2136-4282-b139-d1abd82e26a7",
+				"method": "PUT"
+			},
+			{
+				"id": "94bbdec6-9727-4b2f-af86-3e5cee6012e0",
+				"method": "DELETE"
+			}
+		]
+	}
+}

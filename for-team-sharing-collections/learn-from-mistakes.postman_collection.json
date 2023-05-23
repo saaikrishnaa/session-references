@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "361c3857-3882-4786-8c62-5f1164f647a5",
+		"name": "learn-from-mistakes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16542258",
+		"_collection_link": "https://martian-moon-879545.postman.co/workspace/iTSAPITeam~fb85ca36-1358-4013-bdbb-5a85d79a07af/collection/16542258-361c3857-3882-4786-8c62-5f1164f647a5?action=share&creator=16542258&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Get Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/userdetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"userdetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"userId\", pm.response.json().id)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": {{$randomInt}},\r\n    \"first-name\": \"{{fN}}\",\r\n    \"last-name\": \"{{lN}}\",\r\n    \"country-name\": \"{{cN}}\",\r\n    \"currency-name\": \"{{$randomCurrencyName}}\",\r\n    \"currency-symbol\": \"{{$randomCountryCode}}\",\r\n    \"street-address\": \"{{$randomStreetAddress}}\",\r\n    \"street-name\": \"{{$randomStreetName}}\",\r\n    \"latitude\": \"{{$randomLatitude}}\",\r\n    \"longitude\": \"{{$randomLongitude}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/userdetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"userdetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ger User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/userdetails/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"userdetails",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "{{userId}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 3,\r\n    \"first-name\": \"A_updated\",\r\n    \"last-name\": \"a_updated\",\r\n    \"country-name\": \"country\",\r\n    \"currency-name\": \"currency\",\r\n    \"currency-symbol\": \"$\",\r\n    \"street-address\": \"address\",\r\n    \"street-name\": \"street_updated\",\r\n    \"latitude\": \"234234234.123412\",\r\n    \"longitude\": \"524234234.42342\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/userdetails/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"userdetails",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "{{userId}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/userdetails/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"userdetails",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "{{userId}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

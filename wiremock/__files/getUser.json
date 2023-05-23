@@ -1,0 +1,14 @@
+{
+	"user":{
+	  "id": 1,
+      "first-name": "Cameron",
+      "last-name": "Carter",
+      "country-name": "Mexico",
+      "currency-name": "Zambian Kwacha",
+      "currency-symbol": "AO",
+      "street-address": "265 Ricardo Gardens",
+      "street-name": "Meredith Crossroad",
+      "latitude": "-13.2361",
+      "longitude": "179.3269"
+	}
+}

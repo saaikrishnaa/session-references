@@ -1,0 +1,13 @@
+{
+  "name": "SK Latest Playlist",
+  "owner": {
+    "display_name": "Sai Krishna",
+    "external_urls": {
+      "spotify": "https://open.spotify.com/user/674rxyxew6ledv3xpcwe9o16m"
+    },
+    "href": "https://api.spotify.com/v1/users/674rxyxew6ledv3xpcwe9o16m",
+    "id": "674rxyxew6ledv3xpcwe9o16m",
+    "type": "user",
+    "uri": "spotify:user:674rxyxew6ledv3xpcwe9o16m"
+  }
+}

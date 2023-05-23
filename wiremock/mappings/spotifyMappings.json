@@ -1,0 +1,39 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "method": "GET",
+        "url": "/v1/playlists/60fD2pcVMvCOH3wjo1RIoC"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "getPlaylist.json"
+      }
+    },
+	{
+      "request": {
+        "method": "POST",
+        "url": "/v1/users/someDummyUserID34234/playlists",
+        "bodyPatterns": [{
+          "equalToJson": {
+			"name": "SK New Playlist",
+			"description": "New playlist description",
+			"public": false
+		   }
+        }]
+      },
+      "response": {
+        "status": 201,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+		"jsonBody":{
+			"message" : "New Playlist has Created Successfully"
+		}
+      }
+    }
+  ]
+}

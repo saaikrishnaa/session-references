@@ -1,0 +1,76 @@
+{
+  "userdetails": [
+    {
+      "id": 1,
+      "first-name": "A",
+      "last-name": "a",
+      "country-name": "country",
+      "currency-name": "currency",
+      "currency-symbol": "$",
+      "street-address": "address",
+      "street-name": "street",
+      "latitude": "234234234.123412",
+      "longitude": "524234234.42342"
+    },
+    {
+      "id": 3,
+      "first-name": "A_updated",
+      "last-name": "a_updated",
+      "country-name": "country",
+      "currency-name": "currency",
+      "currency-symbol": "$",
+      "street-address": "address",
+      "street-name": "street_updated",
+      "latitude": "234234234.123412",
+      "longitude": "524234234.42342"
+    },
+    {
+      "id": 38,
+      "first-name": "Lizzie",
+      "last-name": "Ankunding",
+      "country-name": "Lebanon",
+      "currency-name": "Cuban Peso",
+      "currency-symbol": "DK",
+      "street-address": "736 Spinka Point",
+      "street-name": "Brad Camp",
+      "latitude": "-66.2309",
+      "longitude": "-171.4744"
+    },
+    {
+      "id": 79,
+      "first-name": "Cameron",
+      "last-name": "Carter",
+      "country-name": "Mexico",
+      "currency-name": "Zambian Kwacha",
+      "currency-symbol": "AO",
+      "street-address": "265 Ricardo Gardens",
+      "street-name": "Meredith Crossroad",
+      "latitude": "-13.2361",
+      "longitude": "179.3269"
+    },
+    {
+      "id": 878,
+      "first-name": "Alba",
+      "last-name": "Koch",
+      "country-name": "Uzbekistan",
+      "currency-name": "Brazilian Real",
+      "currency-symbol": "BB",
+      "street-address": "5337 Pfeffer Glen",
+      "street-name": "Scarlett Drives",
+      "latitude": "17.7482",
+      "longitude": "-90.9743"
+    },
+    {
+      "id": 994,
+      "first-name": "A_updated",
+      "last-name": "a_updated",
+      "country-name": "country",
+      "currency-name": "currency",
+      "currency-symbol": "$",
+      "street-address": "address",
+      "street-name": "street_updated",
+      "latitude": "234234234.123412",
+      "longitude": "524234234.42342"
+    }
+  ]
+}

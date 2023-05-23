@@ -1,0 +1,104 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "method": "GET",
+        "url": "/users"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "getUsers.json"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "/users/1"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "bodyFileName": "getUser.json"
+      }
+    },
+    {
+      "request": {
+        "method": "POST",
+        "url": "/users",
+        "bodyPatterns": [{
+          "equalToJson": {
+            "id": 3,
+            "first-name": "Alba",
+            "last-name": "Koch",
+            "country-name": "Uzbekistan",
+            "currency-name": "Brazilian Real",
+            "currency-symbol": "BB",
+            "street-address": "5337 Pfeffer Glen",
+            "street-name": "Scarlett Drives",
+            "latitude": "17.7482",
+            "longitude": "-90.9743"
+          }
+        }]
+      },
+      "response": {
+        "status": 201,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+		"jsonBody":{
+			"message" : "Resource Created Successfully"
+		}
+      }
+    },
+	{
+      "request": {
+        "method": "PUT",
+        "url": "/users/3",
+        "bodyPatterns": [{
+          "equalToJson": {
+            "id": 3,
+            "first-name": "Alba",
+            "last-name": "Koch",
+            "country-name": "Uzbekistan",
+            "currency-name": "Brazilian Real",
+            "currency-symbol": "BB",
+            "street-address": "5337 Pfeffer Glen",
+            "street-name": "Scarlett Drives",
+            "latitude": "17.7482",
+            "longitude": "-90.9743"
+          }
+        }]
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+		"jsonBody":{
+			"message" : "Resource Updated Successfully",
+			"updatedRecordId":3
+		}
+      }
+    },
+	{
+      "request": {
+        "method": "DELETE",
+        "url": "/users/3"
+      },
+      "response": {
+        "status": 204,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+		"jsonBody":{
+			"message" : "Resource Deleted Successfully"
+		}
+      }
+    }
+  ]
+}

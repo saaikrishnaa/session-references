@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "first-name": "A",
+        "last-name": "a",
+        "country-name": "country",
+        "currency-name": "currency",
+        "currency-symbol": "$",
+        "street-address": "address",
+        "street-name": "street",
+        "latitude": "234234234.123412",
+        "longitude": "524234234.42342"
+    },
+    {
+        "id": 2,
+        "first-name": "B",
+        "last-name": "a",
+        "country-name": "country",
+        "currency-name": "currency",
+        "currency-symbol": "symbol",
+        "street-address": "street-address",
+        "street-name": "street",
+        "latitude": "45456745645.2354234",
+        "longitude": "34234234123.1234123"
+    },
+    {
+        "id": 3,
+        "first-name": "A",
+        "last-name": "a",
+        "country-name": "country",
+        "currency-name": "currency",
+        "currency-symbol": "$",
+        "street-address": "address",
+        "street-name": "street",
+        "latitude": "234234234.123412",
+        "longitude": "524234234.42342"
+    }
+]
